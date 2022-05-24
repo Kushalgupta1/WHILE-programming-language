@@ -79,7 +79,7 @@ Non Terminals are
 Expression has been shortened as E below.
 
 Rules are
-```math
+\begin{align*}
 $$ \text{Program} \to  \text{program} \quad \text{id} \quad \text{::}\quad  \text{Block}\\ $$
 
 \text{Block} \to \text{DeclarationSeq} \quad \text{CommandBlock}\\
@@ -99,7 +99,7 @@ $$ \text{Program} \to  \text{program} \quad \text{id} \quad \text{::}\quad  \tex
 	| \text{ while E do $CommandBlock$ endwh}\\
 
 \text{E}\to \text{E + E | E - E | E * E | E / E | E \% E | }\\ \text{E \&\& E | E || E | ! E | tt | ff | integer | E < E  } \\ \text{| E > E | E <= E | E >= E | E = E | E <> E }\\\text{| ~ E  | ( E ) | id }
-```
+\end{align*}
 
 
 ### AST datatype definition
