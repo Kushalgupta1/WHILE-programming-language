@@ -2,6 +2,12 @@
 
 ***Kushal Kumar Gupta, 2020CS10355***
 
+Designed a strongly typed programming language with static type checking having if-then-else and while statements
+using SML, ML-Lex and ML-Yacc. 
+- The EBNF for the WHILE language had been given. Designed a lexical analyser using ML-Lex for parsing the
+program, then designed a parser using ML-Yacc for generating the abstract syntax tree (AST) for the program.
+- A VMC (Value-Memory-Control) machine is then designed to execute the AST by converting it into post-fix form.
+
 ### How to use:
 
 You must have `SML`, `ML-Lex` and `ML-Yacc` installed. Go to the source folder in the command prompt and type-
