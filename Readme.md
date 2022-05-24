@@ -79,8 +79,8 @@ Non Terminals are
 Expression has been shortened as E below.
 
 Rules are
-$$ \text{Program} \to  \text{program} \quad \text{id} \quad \text{::}\quad  \text{Block}\\
-
+$$ \text{Program} \to  \text{program} \quad \text{id} \quad \text{::}\quad  \text{Block}\\ $$
+$$
 \text{Block} \to \text{DeclarationSeq} \quad \text{CommandBlock}\\
 
 \text{DeclarationSeq} \to \text{Declaration} \quad \text{;} \quad \text{DeclarationSeq} \\
