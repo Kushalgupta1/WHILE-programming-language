@@ -1,0 +1,5 @@
+program init :: 
+	var f : int;
+{
+ f := 6;
+}

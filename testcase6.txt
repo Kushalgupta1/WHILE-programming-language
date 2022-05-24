@@ -1,0 +1,4 @@
+program empty::
+    var A, B: int;
+{
+}

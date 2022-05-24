@@ -1,0 +1,9 @@
+program emptyWhileITE::
+    var A, B: int;
+{
+    read A;
+    B := 1;
+    while A>0 do {} endwh;
+    if B > 2 then {} else {} endif;
+    write B;
+}

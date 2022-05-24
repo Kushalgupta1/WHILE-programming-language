@@ -1,0 +1,6 @@
+program notDec ::
+    var a, b: int;
+    var d: bool;
+{
+	c := 3;
+}

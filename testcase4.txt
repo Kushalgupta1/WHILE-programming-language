@@ -1,0 +1,12 @@
+program factorial::
+    var n, res: int;
+{
+    read n;
+    res := 1;
+    while n >0 do
+	{res := res* n; 
+	 n:= n-1;
+	} 
+    endwh;
+    write res;
+}

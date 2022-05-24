@@ -1,0 +1,7 @@
+program typeErr::
+    var A: int;
+    var B: bool;
+{
+    A := ff;
+    B := 5;
+}

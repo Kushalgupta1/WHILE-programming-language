@@ -1,0 +1,5 @@
+program uninitialedVar::
+    var A, B: int;
+{
+    A := B + 5;
+}
