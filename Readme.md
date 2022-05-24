@@ -82,24 +82,23 @@ Rules are
 \begin{align*}
 $$ \text{Program} \to  \text{program} \quad \text{id} \quad \text{::}\quad  \text{Block}\\ $$
 
-\text{Block} \to \text{DeclarationSeq} \quad \text{CommandBlock}\\
+$$ \text{Block} \to \text{DeclarationSeq} \quad \text{CommandBlock}\\ $$
 
-\text{DeclarationSeq} \to \text{Declaration} \quad \text{;} \quad \text{DeclarationSeq} \\
+$$ \text{DeclarationSeq} \to \text{Declaration} \quad \text{;} \quad \text{DeclarationSeq} \\ $$
 
-\text{Declaration} \to \text{var   } \text{VariableList} \text{: } \text{Type}\\
+$$ \text{Declaration} \to \text{var   } \text{VariableList} \text{: } \text{Type}\\ $$
 
-\text{VariableList}\to \text{id} \text{,} \text{VariableList   | id}\\
-\text{Type} \to \text{INT | BOOL }  \\\
-\text{CommandBlock}\to \text{\{$CommandSeq$ \}}\\
-\text{$CommandSeq$}\to \text{$Command$ ; $CommandSeq$ | }\epsilon\\
-\text{$Command$}\to \text{id} := \text{E}\\ 
-	| \text{ read I}\\
-	| \text{ write E}\\
-	| \text{ if E then $CommandBlock$ else $CommandBlock$ endif }\\
-	| \text{ while E do $CommandBlock$ endwh}\\
+$$ \text{VariableList}\to \text{id} \text{,} \text{VariableList   | id}\\ $$
+$$ \text{Type} \to \text{INT | BOOL }  \\\ $$
+$$ \text{CommandBlock}\to \text{\{$CommandSeq$ \}}\\ $$
+$$ \text{$CommandSeq$}\to \text{$Command$ ; $CommandSeq$ | }\epsilon\\ $$
+$$ \text{$Command$}\to \text{id} := \text{E}\\  $$
+	$$ | \text{ read I}\\ $$
+	$$ | \text{ write E}\\ $$
+	$$ | \text{ if E then $CommandBlock$ else $CommandBlock$ endif }\\ $$
+	$$ | \text{ while E do $CommandBlock$ endwh}\\ $$
 
-\text{E}\to \text{E + E | E - E | E * E | E / E | E \% E | }\\ \text{E \&\& E | E || E | ! E | tt | ff | integer | E < E  } \\ \text{| E > E | E <= E | E >= E | E = E | E <> E }\\\text{| ~ E  | ( E ) | id }
-\end{align*}
+$$ \text{E}\to \text{E + E | E - E | E * E | E / E | E \% E | }\\ \text{E \&\& E | E || E | ! E | tt | ff | integer | E < E  } \\ \text{| E > E | E <= E | E >= E | E = E | E <> E }\\\text{| ~ E  | ( E ) | id } $$
 
 
 ### AST datatype definition
